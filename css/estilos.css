@@ -1,0 +1,271 @@
+/*  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    background-color: rgb(87, 116, 245);
+    justify-content: space-between;
+    align-items: center;
+    padding: -1em;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+}
+
+header a:hover {
+    color: rgb(119, 0, 255);
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Logo img {
+    height: 6rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+ul {
+    list-style-type: none;
+    display: inline;
+}
+
+nav a {
+    font-weight: 60;
+    padding-right: 2rem;
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+}
+
+nav a:hover {
+    color: rgb(119, 0, 255);
+}
+
+.nv {
+    display: flex;
+}
+
+
+/*footer*/
+footer {
+    background-color: rgb(87, 116, 245);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container-cop {
+    color: white;
+}
+
+.redes-lit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rd-logo {
+    height: 6rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.serv {
+    display: flex;
+    justify-content: center;
+    margin-right: 50rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.serv a {
+    text-decoration: none;
+    color: white;
+}
+
+.serv2 a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/*contenedores v2*/
+
+.image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* max-width: 800px;
+    width: 100%; */
+}
+
+.image{
+    width: calc(33.33% - 10px);
+    margin-bottom: 10px;
+    /* border: 1px solid #ccc; */
+    display: flex;
+}
+
+.container-cm {
+    background-color: rgb(165, 165, 214);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+
+}
+
+.contsiner-cm-h h2 {
+    color: rgb(119, 0, 255);
+    display: flex;
+    justify-content: center;
+}
+
+.container-tad {
+    background-color: rgb(229, 229, 247);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.container-pqe {
+    background-color: rgb(116, 135, 240);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+h3 {
+    color: rgb(119, 0, 255);
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    margin: 0.5rem;
+}
+
+.ta {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.text-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 350px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .image {
+        width: auto;
+        margin-right: 0;
+        margin-bottom: 10px;
+        flex-direction: column;
+        justify-content: flex-start;
+        }
+
+}
+
+
+
+/* tarjetas */
+.card {
+    margin: 2rem;
+    background: rgb(45, 45, 45);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 0.5em;
+    font-weight: bold;
+    font-size: x-large;
+    color: rgb(200,200,200);
+}
+
+.pricecontainer {
+    width: 100%;
+    margin-top: 0.7em;
+    background-color: rgb(30,30,30);
+    box-shadow: inset 0px 0px 2em rgba(0, 0, 0, 0.3);
+}
+
+.price {
+    text-align: center;
+    color: rgb(180,180,180);
+    font-size: x-large;
+    font-weight: bold;
+    padding: 0.75em 0 0 0;
+}
+
+.pricedescriptor {
+    text-align: center;
+    color: rgb(118, 118, 118);
+    font-size: medium;
+    padding: 0 0 1em 0;
+}
+
+.includes {
+    text-align: center;
+    color: rgb(110, 110, 110);
+    margin-top: 0.6em;
+    font-size: small;
+    font-weight: bold;
+}
+
+.benefitlist li {
+    color: rgb(150,150,150);
+    font-size: small;
+    text-align: center;
+}
+
+.benefitlist li:nth-child(1) {
+    margin-top: 0.4em;
+}
+
+.btncontainer {
+    text-align: center;
+}
+
+.btncontainer button {
+    margin-top: 1em;
+    padding: 0.5em 0.8em 0.5em 0.8em;
+    border-style: none;
+    border-radius: 1000000px;
+    color: rgb(239, 239, 239);
+    font-weight: bold;
+    background-image: linear-gradient(45deg, #fe4fe1 0%, #3f00fe 100%);
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.btncontainer button:hover {
+    box-shadow: inset 0px 0px 5px rgb(0,0,0);
+    transition: box-shadow 0.15s ease-in-out;
+}
