@@ -40,7 +40,10 @@ header a:hover {
     color: rgb(119, 0, 255);
 }
 
-
+.collapse{
+    display: flex;
+    justify-content: flex-end;
+}
 
 ul {
     list-style-type: none;
@@ -48,11 +51,27 @@ ul {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*footer*/
 footer{
     width: 100%;
     position: absolute;
-
     background-color: rgb(87, 116, 245);
     display: flex;
     justify-content: center;
@@ -145,6 +164,16 @@ footer{
     opacity: 0.3;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
 /*contenedores v2*/
 
 .image-container{
@@ -155,9 +184,7 @@ footer{
 }
 
 .image{
-    width: calc(33.33% - 10px);
     margin-bottom: 10px;
-
     display: flex;
 }
 
@@ -234,13 +261,24 @@ img {
 
 
 
+
+
+
+
+
+
+
+
+
 /* tarjetas */
 .card {
     margin: 2rem;
-    background: rgb(45, 45, 45);
+    background:  rgb(87, 116, 245);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     transition-duration: 0.5s;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .title {
@@ -254,13 +292,13 @@ img {
 .pricecontainer {
     width: 100%;
     margin-top: 0.7em;
-    background-color: rgb(30,30,30);
+    background-color:  rgb(87, 116, 245);
     box-shadow: inset 0px 0px 2em rgba(0, 0, 0, 0.3);
 }
 
 .price {
     text-align: center;
-    color: rgb(180,180,180);
+    color: rgb(255, 255, 255);
     font-size: x-large;
     font-weight: bold;
     padding: 0.75em 0 0 0;
@@ -268,35 +306,28 @@ img {
 
 .pricedescriptor {
     text-align: center;
-    color: rgb(118, 118, 118);
+    color: rgb(255, 255, 255);
     font-size: medium;
     padding: 0 0 1em 0;
 }
 
 .includes {
     text-align: center;
-    color: rgb(110, 110, 110);
+    color: rgb(255, 0, 191);
     margin-top: 0.6em;
     font-size: small;
     font-weight: bold;
 }
 
 .benefitlist li {
-    color: rgb(150,150,150);
+    color: rgb(255, 255, 255);
     font-size: small;
     text-align: center;
 }
 
-.benefitlist li:nth-child(1) {
-    margin-top: 0.4em;
-}
-
-.btncontainer {
-    text-align: center;
-}
 
 .btncontainer button {
-    margin-top: 1em;
+    margin: 1em;
     padding: 0.5em 0.8em 0.5em 0.8em;
     border-style: none;
     border-radius: 1000000px;
@@ -309,4 +340,82 @@ img {
 .btncontainer button:hover {
     box-shadow: inset 0px 0px 5px rgb(0,0,0);
     transition: box-shadow 0.15s ease-in-out;
+}
+
+.btncontainer a{
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contacto */
+
+form{
+    width: 450px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+legend{
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+input, textarea, select{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    min-height: 150px;
+    max-height: 400px;
+}
+
+select{
+    border-radius: 7px;
+}
+
+#boton{
+    background-color: rgb(87, 116, 245);
+    color: #f2f2f2;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+#boton:hover {
+    background-color:rgb(119, 0, 255);
+}
+
+@media (max-width:450px){
+    form{
+        width: 100%;
+    }
+
 }
